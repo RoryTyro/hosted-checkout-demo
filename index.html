@@ -54,15 +54,16 @@
                     }
                                                                 }
             });
-
+/*
             var settings = {
   "async": true,
   "crossDomain": true,
   "url": "https://test-tyro.mtf.gateway.mastercard.com/api/page/version/55/pay?merchant=TYRO_318&order.currency=AUD&interaction.operation=PURCHASE&interaction.merchant.name=Your+merchant+name&interaction.cancelUrl=file%3A%2F%2F%2FUsers%2Frmccaffrey%2FDocuments%2Fcode%2Fhosted-checkout-demo%2Findex.html%23__hc-action-cancel&interaction.timeoutUrl=file%3A%2F%2F%2FUsers%2Frmccaffrey%2FDocuments%2Fcode%2Fhosted-checkout-demo%2Findex.html%23__hc-action-timeout",
   "method": "GET",
   "headers": {
-    "Content-Type": "application/x-www-form-urlencoded",
-    "Accept": "application/json, text/javascript, */*; q=0.01",
+    //"Content-Type": "application/x-www-form-urlencoded",
+    //added % for commenting in studio code
+    "Accept": "application/json, text/javascript, *%/*; q=0.01",
     "User-Agent": "PostmanRuntime/7.19.0",
     "Cache-Control": "no-cache",
     "Postman-Token": "9e7e0461-414a-4514-8861-5ca5f228d0ed,17984c8a-6c58-4cfd-b9be-f67e2f952173",
@@ -73,7 +74,8 @@
     "cache-control": "no-cache"
   }
 }
-
+*/
+/*
 function hostedPayment(){
 $.ajax(settings).done(function (response) {
   console.log(response);
@@ -81,8 +83,8 @@ $.ajax(settings).done(function (response) {
   var hostedPageURL = "https://test-tyro.mtf.gateway.mastercard.com/" + jsonResponse;
   console.log("Hosted Page URL: " + hostedPageURL);
 });
-return hostedPageURL;
 }
+*
         </script>
 
 
@@ -103,5 +105,7 @@ return hostedPageURL;
 
 <p>&nbsp;</p>
 <center><p><button type="button" onclick="hostedPayment()"; class="btn btn-warning btn-lg">Hosted Payment Page with session </button></p></center>
-  </body>
+<iframe src="https://test-tyro.mtf.gateway.mastercard.com/api/page/version/55/pay?merchant=TYRO_318&order.currency=AUD&interaction.operation=PURCHASE&interaction.merchant.name=Your+merchant+name&interaction.cancelUrl=file%3A%2F%2F%2FUsers%2Frmccaffrey%2FDocuments%2Fcode%2Fhosted-checkout-demo%2Findex.html%23__hc-action-cancel&interaction.timeoutUrl=file%3A%2F%2F%2FUsers%2Frmccaffrey%2FDocuments%2Fcode%2Fhosted-checkout-demo%2Findex.html%23__hc-action-timeout" height="600" width="600"> </iframe>  
+
+</body>
 </html>
