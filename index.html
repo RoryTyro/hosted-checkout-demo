@@ -101,11 +101,11 @@ $.ajax(settings).done(function (response) {
 <p>&nbsp;</p>
 <center><p><button type="button" onclick="Checkout.showLightbox();" class="btn btn-danger btn-lg">Hosted LightBox</button></p></center>
 <p>&nbsp;</p>
-<center><p><button type="button" onclick="Checkout.showPaymentPage();"; class="btn btn-warning btn-lg">Hosted Payment Page</button></p></center>
+<center><p><button type="button" onclick="Checkout.showPaymentPage();" class="btn btn-warning btn-lg">Hosted Payment Page</button></p></center>
 
 <p>&nbsp;</p>
-<center><p><button type="button" onclick="hostedPayment()"; class="btn btn-warning btn-lg">Hosted Payment Page with session </button></p></center>
-<iframe src="https://test-tyro.mtf.gateway.mastercard.com/api/page/version/55/pay?merchant=TYRO_318&order.currency=AUD&interaction.operation=PURCHASE&interaction.merchant.name=Your+merchant+name&interaction.cancelUrl=file%3A%2F%2F%2FUsers%2Frmccaffrey%2FDocuments%2Fcode%2Fhosted-checkout-demo%2Findex.html%23__hc-action-cancel&interaction.timeoutUrl=file%3A%2F%2F%2FUsers%2Frmccaffrey%2FDocuments%2Fcode%2Fhosted-checkout-demo%2Findex.html%23__hc-action-timeout" height="600" width="600"> </iframe>  
+<center><p><button type="button" onclick="hostedPayment();" class="btn btn-warning btn-lg">Hosted Payment Page with session </button></p></center>
+<button src="https://test-tyro.mtf.gateway.mastercard.com/api/page/version/55/pay?merchant=TYRO_318&order.currency=AUD&interaction.operation=PURCHASE&interaction.merchant.name=Your+merchant+name&interaction.cancelUrl=file%3A%2F%2F%2FUsers%2Frmccaffrey%2FDocuments%2Fcode%2Fhosted-checkout-demo%2Findex.html%23__hc-action-cancel&interaction.timeoutUrl=file%3A%2F%2F%2FUsers%2Frmccaffrey%2FDocuments%2Fcode%2Fhosted-checkout-demo%2Findex.html%23__hc-action-timeout" height="600" width="600" class="btn btn-warning btn-lg"> URL hosted page session</button>  
 
 </body>
 </html>
