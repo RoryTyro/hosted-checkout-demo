@@ -40,9 +40,6 @@
                     description: 'Ordered goods',
                     id: Date.now()
              },
-                session: {
-                        id: 'SESSION0002440978868J8292902N71'
-                    },
                 interaction: {
                     operation: 'PURCHASE', // set this field to 'PURCHASE' for Hosted Checkout to perform a Pay Operation.
                     merchant: {
@@ -54,37 +51,7 @@
                     }
                                                                 }
             });
-/*
-            var settings = {
-  "async": true,
-  "crossDomain": true,
-  "url": "https://test-tyro.mtf.gateway.mastercard.com/api/page/version/55/pay?merchant=TYRO_318&order.currency=AUD&interaction.operation=PURCHASE&interaction.merchant.name=Your+merchant+name&interaction.cancelUrl=file%3A%2F%2F%2FUsers%2Frmccaffrey%2FDocuments%2Fcode%2Fhosted-checkout-demo%2Findex.html%23__hc-action-cancel&interaction.timeoutUrl=file%3A%2F%2F%2FUsers%2Frmccaffrey%2FDocuments%2Fcode%2Fhosted-checkout-demo%2Findex.html%23__hc-action-timeout",
-  "method": "GET",
-  "headers": {
-    //"Content-Type": "application/x-www-form-urlencoded",
-    //added % for commenting in studio code
-    "Accept": "application/json, text/javascript, *%/*; q=0.01",
-    "User-Agent": "PostmanRuntime/7.19.0",
-    "Cache-Control": "no-cache",
-    "Postman-Token": "9e7e0461-414a-4514-8861-5ca5f228d0ed,17984c8a-6c58-4cfd-b9be-f67e2f952173",
-    "Host": "test-tyro.mtf.gateway.mastercard.com",
-    "Accept-Encoding": "gzip, deflate",
-    "Cookie": "TS0183aa3c=01772feb4b89d5199f38b6b7c5f883cc54c7c93276affa594d5cd1dd1d3d9bf69018ed690c59f6911326c375e8d4f4d6b5522d1bff",
-    "Connection": "keep-alive",
-    "cache-control": "no-cache"
-  }
-}
-*/
-/*
-function hostedPayment(){
-$.ajax(settings).done(function (response) {
-  console.log(response);
-  var jsonResponse = JSON.parse(response);
-  var hostedPageURL = "https://test-tyro.mtf.gateway.mastercard.com/" + jsonResponse;
-  console.log("Hosted Page URL: " + hostedPageURL);
-});
-}
-*/
+
         </script>
 
 
@@ -92,22 +59,13 @@ $.ajax(settings).done(function (response) {
 <script type="text/javascript"
         src="https://www.simplify.com/commerce/simplify.pay.js"></script>
 
-<center><h1>Live Examples!</h1></center>
+<center><h1>MPGS hosted page examples</h1></center>
 <p>&nbsp;</p>
-<center><h3>Simplify Test Card: 4111-1111-1111-1111</h3></center>
-<p>&nbsp;</p>
+
 <center><h3>MPGS Test Card: 4761-7312-3456-7890</h3></center>
 
 <p>&nbsp;</p>
 <center><p><button type="button" onclick="Checkout.showLightbox();" class="btn btn-danger btn-lg">Hosted LightBox</button></p></center>
 <p>&nbsp;</p>
-<center><p><button type="button" onclick="Checkout.showPaymentPage();" class="btn btn-warning btn-lg">Hosted Payment Page</button></p></center>
+<center><p><button type="button" onclick="Checkout.showPaymentPage();"; class="btn btn-warning btn-lg">Hosted Payment Page</button></p></center>
 
-<p>&nbsp;</p>
-<center><p><button type="button" onclick="hostedPayment();" class="btn btn-warning btn-lg">Hosted Payment Page with session </button></p></center>
-<p>&nbsp;</p>
-<center><p>
-<a href="https://test-tyro.mtf.gateway.mastercard.com/api/page/version/55/pay?merchant=TYRO_318&order.currency=AUD&interaction.operation=NONE&interaction.merchant.name=Clinic&interaction.cancelUrl=https://google.com&interaction.timeoutUrl=https://google.com" height="600" width="600" class="btn btn-warning btn-lg"> URL hosted page session</a></p></center> 
-
-</body>
-</html>
