@@ -30,6 +30,9 @@
             }
 
             Checkout.configure({
+                              session: { 
+            	id: 'SESSION0002008589198G4438129M30'
+       			},
                 merchant: 'TYRO_318',
                 order: {
                     amount: function() {
@@ -38,8 +41,7 @@
                     },
                     currency: 'AUD',
                     description: 'Ordered goods',
-                    id: Date.now(),
-                    owningEntity: '334t63et45'
+                    id: Date.now()
              },
                 interaction: {
                     operation: 'PURCHASE', // set this field to 'PURCHASE' for Hosted Checkout to perform a Pay Operation.
