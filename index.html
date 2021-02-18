@@ -16,7 +16,7 @@
 
 </head>
 
-<script src="https://test-tyro.mtf.gateway.mastercard.com/checkout/version/57/checkout.js"
+<script src="https://test-tyro.mtf.gateway.mastercard.com/checkout/version/54/checkout.js"
                 data-error="errorCallback"
                 data-cancel="cancelCallback">
         </script>
@@ -30,7 +30,7 @@
             }
 
             Checkout.configure({
-                merchant: 'TYRO_318',
+                merchant: 'TESTTYRO_TCS3DS',
                 order: {
                     amount: function() {
                         //Dynamic calculation of amount
@@ -40,9 +40,9 @@
                     description: 'Ordered goods',
                     id: Date.now()
              },
-                session: {
-                        id: 'SESSION0002440978868J8292902N71'
-                    },
+  //              session: {
+  //                      id: 'SESSION0002440978868J8292902N71'
+  //                  },
                 interaction: {
                     operation: 'PURCHASE', // set this field to 'PURCHASE' for Hosted Checkout to perform a Pay Operation.
                     merchant: {
