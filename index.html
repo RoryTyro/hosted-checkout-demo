@@ -30,27 +30,26 @@
             }
 
             Checkout.configure({
-                merchant: 'MTFTYRO_79',
+                merchant: 'TESTTYRO_MEANDU',
+                session: {
+                    id: 'SESSION0002168348335N1287768N48'
+                },
                 order: {
-                    amount: function() {
-                        //Dynamic calculation of amount
-                        return 80 + 20;
-                    },
+                    amount: session.amount,
                     currency: 'AUD',
-                    description: 'Ordered goods',
-                    id: Date.now()
-             },
+                    id: session.orderId,
+                    description: "Production Verification Test"
+                },
                 interaction: {
-                    operation: 'PURCHASE', // set this field to 'PURCHASE' for Hosted Checkout to perform a Pay Operation.
+                    operation: 'PURCHASE',
                     merchant: {
-                        name: 'Your merchant name',
+                        name: 'Tyro Payments 3ds PVT',
                         address: {
-                            line1: '200 Sample St',
-                            line2: '1234 Example Town'            
-                        }    
+                            line1: '155 Clarence St',
+                            line2: 'Sydney 2000'
+                        }
                     }
-                                                                }
-                      
+                }
             });
          
         </script>
@@ -60,7 +59,7 @@
 
 <center><h1>MPGS hosted page examples</h1></center>
 <p>&nbsp;</p>
-<center><h2>updated: 19/03/21 2:18pm</h2></center>
+<center><h2>updated: 19/03/21 2:26pm</h2></center>
 
 <center><h3>MPGS Test Card: Visa: 4111-1111-1111-1111</h3></center>
 
