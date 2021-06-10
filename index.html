@@ -16,7 +16,7 @@
 
 </head>
 
-<script src="https://tyro.gateway.mastercard.com/checkout/version/55/checkout.js"
+<script src="https://test-tyro.mtf.gateway.mastercard.com/checkout/version/57/checkout.js"
                 data-error="errorCallback"
                 data-cancel="cancelCallback">
         </script>
@@ -30,7 +30,8 @@
             }
 
             Checkout.configure({
-                merchant: 'TYRO_68233',
+                session: "SESSION0002351372478L12179871E9",
+                merchant: 'TYRO_318',
                 order: {
                     amount: 1,
                     currency: 'AUD',
